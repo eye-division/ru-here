@@ -1,9 +1,11 @@
 ---
 layout: home
-main_image_path:
-main_image_caption:
+front_image_path: "/assets/images/ru-cover-image-sm.jpg"
+front_image_caption: "R.U.here"
+main_image_path: "/assets/images/ru-cover-image-sm.jpg"
+main_image_caption: "R.U.here"
 show_carousel: false
-show_blog: true
+show_blog: false
 posts_number: 2
 carousel:
   - image: /assets/images/advert-customers.jpg
@@ -30,8 +32,8 @@ _options:
   content:
     uploads_dir: "assets/:year"
 _comments:
-  main_image_path: Cover image
-  main_image_caption: Alt text for cover image
+  front_image_path: Cover image
+  front_image_caption: Alt text for cover image
   carousel: Edit the slideshow
   show_carouse: Show the slideshow
   show_blog: Show your latest posts on the homepage
@@ -39,47 +41,49 @@ _comments:
   alink: Optional web link from the slide
   caption: optional caption
 ---
-  {% if page.main_image_path %}
-  <!-- parallax picture please -->
+
+  {% if page.front_image_path and page.show_front_image %}
+
+    <!-- parallax picture please -->
     <figure>
     {% assign alt_text = page.title %}
-    {% if page.main_image_caption %} {% assign alt_text = page.main_image_caption %} {% endif %}
-    {% include img.html src=page.main_image_path alt=alt_text %}
+    {% if page.front_image_caption %} {% assign alt_text = page.front_image_caption %} {% endif %}
+    {% include img.html src=page.front_image_path alt=alt_text %}
     <figcaption>{{ alt_text }}</figcaption>
     </figure>
+
   {% endif %}
 
   <div class="editable">
     <p>This demo front page shows how you can profile individual galleries and pages to appear on the front, with a custom image, introductory title and text for each. This is the standard display with full page-width images and titles underneath, but other options are available.</p>
-
   </div>
 
-    {% if page.show_carousel and page.carousel %}
-    <section class="slideshow">
-      <h2>This is a demo slideshow</h2>
-      <div class="flexslider">
-          <ul class="slides">
-            {% for slides in page.carousel %}
-            <li>
-              {% if slides.alink %}
-                 <a href="{{ site.baseurl }}{{ slides.alink }}" title="View project">
-              {% endif %}
-              {% include img.html src=slides.image width=960 alt=slides.caption %}
-              {% if slides.alink %}
-                </a>
-              {% endif %}
-              {% if slides.caption %}
-                <p class="flex-caption">{% if slides.alink %}<a href="{{ site.baseurl }}{{ slides.alink }}" title="View project">{% endif %}{{ slides.caption }}{% if slides.alink %}&nbsp;<svg class="icon icon__white icon--readmore"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#icon-double_angle_right" /></svg></a>{% endif %}</p>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </section>
-      {% endif %}
+  {% if page.show_carousel and page.carousel %}
+  <section class="slideshow">
+    <h2>This is a demo slideshow</h2>
+    <div class="flexslider">
+        <ul class="slides">
+          {% for slides in page.carousel %}
+          <li>
+            {% if slides.alink %}
+               <a href="{{ site.baseurl }}{{ slides.alink }}" title="View project">
+            {% endif %}
+            {% include img.html src=slides.image width=960 alt=slides.caption %}
+            {% if slides.alink %}
+              </a>
+            {% endif %}
+            {% if slides.caption %}
+              <p class="flex-caption">{% if slides.alink %}<a href="{{ site.baseurl }}{{ slides.alink }}" title="View project">{% endif %}{{ slides.caption }}{% if slides.alink %}&nbsp;<svg class="icon icon__white icon--readmore"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#icon-double_angle_right" /></svg></a>{% endif %}</p>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+    {% endif %}
 
-      <!-- Regular page promotions on front page -->
-      {% for section in site.pages %}
+    <!-- Regular page promotions on front page -->
+    {% for section in site.pages %}
 
       {% if section.frontpage %}
 
@@ -138,28 +142,28 @@ _comments:
     {% endfor %}
 
 
-{% if page.show_blog %}
+    {% if page.show_blog %}
 
-    <section class="blog blog--home">
+      <section class="blog blog--home">
 
-      <div class="editable">
-        <h2>Latest news</h2>
-      </div>
+        <div class="editable">
+          <h2>Latest news</h2>
+        </div>
 
-      <ul class="posts--list">
+        <ul class="posts--list">
 
-        {% for post in site.posts limit:page.posts_number %}
+          {% for post in site.posts limit:page.posts_number %}
 
-         {% unless post.categories contains 'Archive' %}
+           {% unless post.categories contains 'Archive' %}
 
-          {% include post_excerpt.html %}
+            {% include post_excerpt.html %}
 
-        {% endunless %}
+          {% endunless %}
 
-        {% endfor %}
+          {% endfor %}
 
-      </ul>
-      <p><a href="/news/">Read all news&nbsp;&raquo;</a></p>
+        </ul>
+        <p><a href="/news/">Read all news&nbsp;&raquo;</a></p>
 
-    </section>
+      </section>
     {% endif %}
