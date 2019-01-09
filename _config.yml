@@ -150,22 +150,22 @@ social:
 
   - name: Facebook
     icon: icon-facebook_sign
-    username: 'eyedivision'
-    url: https://www.facebook.com/eyedivision
+    username: ''
+    url:
     desc: Like us on Facebook
     share: true
 
   - name: Instagram
     icon: icon-instagram
-    username: '@eyedivision'
-    url: https://instagram.com/eyedivision
+    username: '@art.dot2dot'
+    url: https://instagram.com/art.dot2dot
     desc: Follow us on Instagram
     share: false
 
   - name: Twitter
     icon: icon-twitter_sign
-    username: '@EyeDivision'
-    url: https://twitter.com/EyeDivision
+    username: ''
+    url:
     desc: Follow us on Twitter
     share: true
 
