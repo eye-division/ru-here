@@ -149,23 +149,23 @@ social:
 
   - name: Facebook
     icon: icon-facebook_sign
-    username: ''
-    url:
+    username: 'RUhere2019'
+    url: 'https://www.facebook.com/RUhere2019/'
     desc: Like us on Facebook
     share: true
 
   - name: Instagram
     icon: icon-instagram
-    username: '@art.dot2dot'
-    url: https://instagram.com/art.dot2dot
-    desc: Follow us on Instagram
+    username: 'rural_urban_'
+    url: 'https://www.instagram.com/rural_urban_/'
+    desc: 'Follow us on Instagram'
     share: false
 
   - name: Twitter
     icon: icon-twitter_sign
-    username: ''
-    url:
-    desc: Follow us on Twitter
+    username: 'RuralUrban2'
+    url: 'https://twitter.com/RuralUrban2'
+    desc: 'Follow us on Twitter'
     share: true
 
   - name: Pinterest
