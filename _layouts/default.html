@@ -9,7 +9,11 @@
 
     {% include svg/symbol-defs.svg %}
 
-    {% include header.html %}
+    {% if page.layout != 'home' %}
+
+      {% include header.html %}
+
+    {% endif %}
 
     <div class="page--content">
         {{ content }}

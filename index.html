@@ -1,36 +1,49 @@
 ---
 layout: home
-front_image_path: "/assets/images/ru-cover-image-sm.jpg"
-front_image_caption: "R.U.here"
-main_image_path: "/assets/images/ru-cover-image-sm.jpg"
-main_image_caption: "R.U.here"
+front_image_path: /assets/images/ru-cover-image-sm.jpg
+front_image_caption: >-
+  "R-U-here is an exploration into the past,present and the future of Rural &
+  Urban living and how changes might effect us all. The explorations will be
+  through walks,talks,exhibitions,performance,games,humor,Art, Architecture
+  and... with people. This is a holding page- full website will follow.please
+  follow us on social media for the moment.
+main_image_path: /assets/images/ru-cover-image-sm.jpg
+main_image_caption: >-
+  "R-U-here is an exploration into the past,present and the future of Rural &
+  Urban living and how changes might effect us all. The explorations will be
+  through walks,talks,exhibitions,performance,games,humor,Art, Architecture
+  and... with people. This is a holding page- A full website will follow.please
+  follow us on social media for the moment.
 show_carousel: false
 show_blog: false
 posts_number: 2
 carousel:
-  - image: /assets/images/advert-customers.jpg
-    caption: "A test caption"
-    alink: /gallery/test/
   - image: /assets/images/advert-impregnable.jpg
+    caption:
+    alink:
+  - image: /assets/images/20190101_203049 copy.jpg
+    caption: Urban
+    alink: /gallery/test/
+  - image:
     caption:
     alink:
 _options:
   layout:
     hidden: true
   image_path:
-    uploads_dir: "assets/images/:year"
+    uploads_dir: 'assets/images/:year'
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
   main_image_path:
-    uploads_dir: "assets/images/:year"
+    uploads_dir: 'assets/images/:year'
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
   content:
-    uploads_dir: "assets/:year"
+    uploads_dir: 'assets/:year'
 _comments:
   front_image_path: Cover image
   front_image_caption: Alt text for cover image
@@ -55,7 +68,9 @@ _comments:
   {% endif %}
 
   <div class="editable">
-    
+    <p>"R-U-here is an exploration into the past,present and the future of Rural &amp; Urban living and how changes might effect us all.</p>
+    <p>The explorations will be through walks,talks,exhibitions,performance,games,humor,Art, Architecture and... with people.</p>
+    <p>This is a holding page- full website will follow.please follow us on social media for the moment.</p>
   </div>
 
   {% if page.show_carousel and page.carousel %}

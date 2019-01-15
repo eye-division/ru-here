@@ -3,15 +3,17 @@ title: Gallery 1
 display_title: true
 permalink: /gallery/test/
 description_markdown: >-
-  This is an example of a gallery with thumbnails in their original format - landscape or portrait, exactly as you upload them.
+  This is an example of a gallery with thumbnails in their original format -
+  landscape or portrait, exactly as you upload them.
 frontpage: false
-frontpagetitle: "Gallery 1"
+frontpagetitle: Gallery 1
 homepage_description_markdown: >-
-  This is an example of a gallery with thumbnails in their original format - landscape or portrait, exactly as you upload them. 
+  This is an example of a gallery with thumbnails in their original format -
+  landscape or portrait, exactly as you upload them.
 gallery_date: 2016-05-01 00:00:00
 display_image: true
 main_image_path: /assets/images/e-la-nave-va_21390829511_o.jpg
-main_image_caption: "Ocean liner in Venice"
+main_image_caption: Ocean liner in Venice
 thumb_crop: false
 display_thumb_title: true
 images:
@@ -30,22 +32,22 @@ images:
   - image_path: '/assets/images/Keen of Hamar, Unst.jpg'
     image_title: Resized to 600
     image_description: Resized to 600 square max
-archive: false
+archive: true
 _options:
   image_path:
-    uploads_dir: "assets/images/:year"
+    uploads_dir: 'assets/images/:year'
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
   main_image_path:
-    uploads_dir: "assets/images/:year"
+    uploads_dir: 'assets/images/:year'
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
   content:
-    uploads_dir: "assets/:year"
+    uploads_dir: 'assets/:year'
 _comments:
   title: Gallery title
   permalink: Edit the web address here - letters and hyphen only
