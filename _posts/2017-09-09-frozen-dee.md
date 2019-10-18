@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Frozen Dee"
+title: Frozen Dee
 post_date: 2017-09-09 15:21:00
-main_image_path: "/assets/images/26643129558_40c11dc5da_o.jpg"
-main_image_caption: "The Dee in winter"
+main_image_path: /uploads/images-3.jpg
+main_image_caption: The Dee in winter
 comments: true
-tags: clients
+tags:
+  - Buses
+  - transport
 images:
   - image_path:
     description:
@@ -20,8 +22,8 @@ _options:
   image_path:
     width: '1200'
     height: '1200'
-    resize_style: "contain"
-    mime_type: "image/jpeg"   
+    resize_style: contain
+    mime_type: image/jpeg
 _comments:
   title: Post title
   main_image_path: Featured image
@@ -29,4 +31,6 @@ _comments:
   tags: use tags to link posts to each other
 ---
 
-Our company is impregnable, unless you have the power of flight.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at modi omnis aspernatur similique perferendis sapiente provident suscipit beatae laboriosam doloribus vel ipsam reprehenderit, ullam, dolores eum cumque, repellat et!
+R-U explores Rural and Urban living.
+
+Buses are a life line for both and link the two. Through out October we have been exploring how buses are used and what they could be....
