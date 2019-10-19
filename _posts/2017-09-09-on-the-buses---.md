@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Frozen Dee
+title: On the buses...
 post_date: 2017-09-09 15:21:00
 main_image_path: /uploads/images-3.jpg
-main_image_caption: The Dee in winter
+main_image_caption:
 comments: true
 tags:
   - Buses
@@ -33,4 +33,4 @@ _comments:
 
 R-U explores Rural and Urban living.
 
-Buses are a life line for both and link the two. Through out October we have been exploring how buses are used and what they could be....
+Buses are a life line for both and link the two. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Through out October we have been exploring how &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; buses are used and what they could be….
