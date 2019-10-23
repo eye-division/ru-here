@@ -3,7 +3,7 @@ layout: post
 title: G11 the Ghost bus-stop tour
 post_date: 2019-10-23 00:00:00
 main_image_path: /uploads/ghost-bus-pages.jpg
-main_image_caption:
+main_image_caption: 'buses.rural ,urban'
 comments: true
 tags:
 images:
