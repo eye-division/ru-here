@@ -163,8 +163,8 @@ social:
 
   - name: Twitter
     icon: icon-twitter_sign
-    username: 'RUhere7'
-    url: 'https://twitter.com/RUhere7'
+    username:
+    url:
     desc: 'Follow us on Twitter'
     share: true
 
